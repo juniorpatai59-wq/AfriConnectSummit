@@ -3,152 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AfriConnect Summit</title>
+    <title>AfriConnect Summit 2026</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+        <!-- le menu de navigation -->
     <header>
         <nav>
             <div>
                 <strong>AfriConnect</strong>
                 <span>Summit 2026</span>
-                Logo
             </div>
 
             <ul>
-                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html" aria-current="page">Accueil</a></li>
                 <li><a href="programme.html">Programme</a></li>
-                <li><a href="intervenant.html">Intervenants</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-
-            <button>Dark Mode</button>
+                <!-- bouton pour le menu mobile et l'activation ou désactivation du mode sombre  -->
+            <button id="theme-toggle" aria-label="Basculer le mode sombre">Dark Mode</button>
+            <button id="menu-toggle" aria-label="Ouvrir le menu">☰</button>
         </nav>
     </header>
 
+        <!-- le main -->
     <main>
-
-        <section>
+            <!-- Hero en plein ecran -->
+        <section class="hero">
             <h1>AfriConnect Summit 2026</h1>
             <p><strong>3 jours pour connecter les talents, les idées et les capitaux qui transforment l'Afrique.</strong></p>
+            <p>Centre International de Conférence Abdou Diouf, Dakar - du 5 au 7 octobre 2026</p>
+            
+            <div class="hero-cta">
+                <a href="programme.html">Voir le programme</a>
+                <p>ou</p>
+                <a href="contact.html">s'inscrire</a>
+            </div>
 
-            <p>
-                Rejoignez 1 200+ participants, 48 intervenants et Investisseurs venus de 12 pays pour des conférences, ateliers pratiques et session de pitch.
-            </p>
-
-            <a href="#">Voir le programme</a>
-            <a href="#">s'inscrire</a>
+                <!-- le compte à rebours en temps réel, rempli par setInterval en js -->
+            <div class="countdown" aria-live="polite">
+                <div>
+                    <span id="jours">00</span>
+                    <p>Jours</p>
+                </div>
+                <div>
+                    <span id="heures">00</span>
+                    <p>Heure</p>
+                </div>
+                <div>
+                    <span id="minutes">00</span>
+                    <p>Minutes</p>
+                </div>
+                <div>
+                    <span id="secondes">00</span>
+                    <p>Secondes</p>
+                </div>
+            </div>
         </section>
 
+            <!-- Chiffres clés avec compteurs animé au scroll via InsectionObserver -->
         <section>
             <h2>Chiffres clés</h2>
-                <div>
-                    <div>
-                        <div><strong>1200+</strong></div>
+
+                <div class="stats-grid">
+                    <!-- 1200+ -->
+                    <div class="stat">
+                        <div><span class="compteur" data-cible="1200">0</span>+</div>
                         <div>Participants</div>
                     </div>
-                    <div>
-                        <div><strong>48</strong></div>
+                    <!-- 48 -->
+                    <div class="stat">
+                        <div><span class="compteur" data-cible="48">0</span></div>
                         <div>Intervenants</div>
                     </div>
-                    <div>
-                        <div><strong>12</strong></div>
+                    <!-- 21 -->
+                    <div class="stat">
+                        <div><span class="compteur" data-cible="12">0</span></div>
                         <div>Pays représentés</div>
                     </div>
-                    <div>
-                        <div><strong>3</strong></div>
+                    <!-- 3 -->
+                    <div class="stat">
+                        <div><span class="compteur" data-cible="3">0</span></div>
                         <div>Jours</div>
                     </div>
                 </div>
             <p>Venez pour le contenu, repartez avec des partenariats concrets.</p>
         </section>
 
+            <!-- Pourquoi participer -->
         <section>
-            <h2>Thèmes du sommet</h2>
-            <div>
-                <article>
+            <h2>Pourquoi participer</h2>
+
+            <div class="argument-flex">
+                <article class="reveal">
+                    <i class="bi bi-people"></i>
                     <h3>Networking</h3>
                     <p>Rencontrez des partenaires, mentors et clients potentiels lors de sessions B2B, speed-networking et soirées dédiées.</p>
-                        <ul>
-                            <li>Rencontres ciblés avec investisseurs et corporates</li>
-                            <li>Sessions speed-networking thématiques</li>
-                            <li>Espace startups pour rendez-vous privés</li>
-                        </ul>
                 </article>
 
-                <article>
+                <article class="reveal">
+                    <i class="bi bi-lightbulb"></i>
                     <h3>Innovation</h3>
-                    <p>Présentations de solutions locales, démonstrations produits et ateliers pour accélérer l'adoption technologie.</p>
-                        <ul>
-                            <li>Ateliers hands-on animés par experts</li>
-                            <li>Démonstrations de technologies africaines</li>
-                            <li>Hackathon et challenges sectoriels</li>
-                        </ul>
+                    <p>Présentations de solutions locales, démonstrations produits et ateliers pour accélérer l'adoption technologique.</p>
                 </article>
 
-                <article>
+                <article class="reveal">
+                    <i class="bi bi-cash-coin"></i>
                     <h3>Investissement</h3>
-                    <p>Pitchs, tables rondes et rendez-vous one-to-one pour faciliter les levés de fonds et les partenariats stratégiques.</p>
-                        <ul>
-                            <li>Session de pitch avec feedback d'investisseurs</li>
-                            <li>Rendez-vous one-to-one pour diligence rapide</li>
-                            <li>Panels sur modèles de financement adaptés à l'Afrique</li>
-                        </ul>
-                </article>
+                    <p>Pitchs, tables rondes et rendez-vous one-to-one pour faciliter les levées de fonds et les partenariats stratégiques.</p>
+                </article>             
             </div>
         </section>
 
+            <!-- Apperçu de 4 intervenants vedettes -->
         <section>
             <h2>Intervenants vedettes</h2>
             <p>Découvrez quelques intervenants phares - leaders, fondateurs et investisseurs qui animeront les sessions.</p>
-                <div>
-                <article>
-                    <img src="" alt="">
-                    <h3></h3>
-                    <p>Fonction</p>
-                </article>
 
-            <article>
-                <img src="" alt="">
-                <h3></h3>
-                <p>Fonction</p>
-            </article>
+                <div class="intervenants-grid">
+                    <article class="reveal">
+                        <img src="images/AminataDiallo.jpg" alt="Photo de Aminata Diallo" height="300" width="300">
+                        <h3>Aminata Diallo</h3>
+                        <p>Sénégal - IA & Tech</p>
+                    </article>
 
-            <article>
-                <img src="" alt="">
-                <h3></h3>
-                <p>Fonction</p>
-            </article>
+                    <article class="reveal">
+                        <img src="images/KwameMensah.jpg" alt="Photo de Kwame Mensah" height="300" width="300">
+                        <h3>Kwamé Mensah</h3>
+                        <p>Ghana - Business</p>
+                    </article>
 
-            <article>
-                <img src="" alt="">
-                <h3></h3>
-                <p>Fonction</p>
-            </article>
+                    <article class="reveal">
+                        <img src="images/MoussaTraore.jpg" alt="Photo de Moussa Traoré" height="300" width="300">
+                        <h3>Moussa Traoré</h3>
+                        <p>Mali - Data</p>
+                    </article>
 
-            <a href="intervenant.html">Voir tous les intervenants</a>
+                    <article class="reveal">
+                        <img src="images/JeanKouame.jpg" alt="Photo de Jean Kouamé" height="300" width="300">
+                        <h3>Jean Kouamé</h3>
+                        <p>Côte d'Ivoire - Design</p>
+                    </article>
+                </div>
+
+            <a href="intervenants.html">Voir tous les intervenants</a>
         </section>
 
+            <!-- les sponsors avec 3 niveau differenciée en css -->
         <section>
-            <h2>Nos sponsors</h2>   
-                <div>
+            <h2>Nos sponsors</h2> 
 
-                </div>
-                <div>
+                <div class="sponsors-flex">
+                    <div class="sponsor sponsor-or">
+                        <img src="" alt="Logo sponsor Or - TechAfrica Bank">
+                    </div>
+                    <div class="sponsor sponsor-or">
+                        <img src="" alt="Logo sponsor Or - Sahel Telecom">
+                    </div>
 
-                </div>
-                <div>
+                    <div class="sponsor sponsor-argent">
+                        <img src="" alt="Logo sponsor Argent - Baobab Ventures">
+                    </div>
+                    <div class="sponsor sponsor-argent">
+                        <img src="" alt="Logo sponsor Argent - Kora Insurance">
+                    </div>
 
-
-                </div>
-                <div>
-
+                    <div class="sponsor sponsor-bronze">
+                        <img src="" alt="Logo sponsor Bronze - Teranga Coffee">
+                    </div>
+                    <div class="sponsor sponsor-bronze">
+                        <img src="" alt="Logo sponsor Bronze - Jokko Media">
+                    </div>
                 </div>
         </section>
+
     </main>
 
+        <!-- le pied de page -->
     <footer>
         <div>
             <div>
+                <h4>Réseaux sociaux</h4>
                 <div>
                     <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
                     <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
@@ -163,7 +199,7 @@
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="programme.html">Programme</a></li>
-                    <li><a href="intervenant.html">Intervenants</a></li>
+                    <li><a href="intervenants.html">Intervenants</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -185,9 +221,11 @@
             </div>
         </div>
 
-        <p>&copy; 2026 AfriConnect. Tous droits réservés.</p>
+        <p>&copy; <span id="annee"></span> AfriConnect. Tous droits réservés.</p>
+            <!-- masqué par defaut, affiché par js après scroll -->
+        <button id="retour-haut" aria-label="Retour en haut de page" hidden>↑</button>
     </footer>
 
-    <script src="JS/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intervenants - AfriConnect Summit</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+            <!-- le menu de navigation -->
+    <header>
+        <nav>
+            <div>
+                <strong>AfriConnect</strong>
+                <span>Summit 2026</span>
+            </div>
+
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html" aria-current="page">Intervenants</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <button id="theme-toggle" aria-label="Basculer le mode sombre">Dark Mode</button>
+            <button id="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+        </nav>
+    </header>
+
+        <!-- le main -->
+    <main>
+            <!-- hero interne + fil d'ariane -->
+        <section>
+            <nav aria-label="Fil d'Ariane">
+                <ol>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li aria-current="page">Intervenants</li>
+                </ol>
+            </nav>
+
+            <h1>Nos Intervenants</h1>
+            <p>Découvrez les leaders, fondateurs et investisseurs qui animeront les sessions du sommet.</p>
+        </section>
+
+        <section>
+                <!-- filtrage dynamique au clic pour afficher celui qui correspond -->
+            <div class="filtres" role="group" aria-label="Filtrer les intervenants par thématique">
+                <button class="filtre-btn actif" data-filtre="tous">Tous</button>
+                <button class="filtre-btn" data-filtre="ia-tech">IA & Tech</button>
+                <button class="filtre-btn" data-filtre="business">Business</button>
+                <button class="filtre-btn" data-filtre="design">Design</button>
+                <button class="filtre-btn" data-filtre="data">Data</button>
+            </div>
+                
+            <!-- la grille des intervenants -->
+            <div class="intervenants-grid">
+
+                <article class="carte-intervenant" data-categorie="ia-tech">
+                    <img src="images/AminataDiallo.jpg" alt="Photo de Aminata Diallo" height="300" width="300">
+                    <h2>Aminata Diallo</h2>
+                    <p>Spécialiste en Intelligence Artificielle</p>
+                    <p>Sénégal</p>
+                </article>
+
+                <article class="carte-intervenant" data-categorie="business">
+                    <img src="images/KwameMensah.jpg" alt="Photo de Kwame Mensah" height="300" width="300">
+                    <h2>Kwamé Mensah</h2>
+                    <p>Fondateur & CEO, FinTech Africa</p>
+                    <p>Ghana</p>
+                </article>
+
+                <article class="carte-intervenant" data-categorie="design">
+                    <img src="images/JeanKouame.jpg" alt="Photo de Jean Kouamé" height="300" width="300">
+                    <h2>Jean Kouamé</h2>
+                    <p>Directeur Design UX/UI</p>
+                    <p>Côte d'Ivoire</p>
+                </article>
+
+                <article class="carte-intervenant" data-categorie="data">
+                    <img src="images/MoussaTraore.jpg" alt="Photo de Moussa Traoré" height="300" width="300">
+                    <h2>Moussa Traoré</h2>
+                    <p>Data Scientist</p>
+                    <p>Mali</p>
+                </article>
+
+                <article class="carte-intervenant" data-categorie="ia-tech">
+                    <img src="images/FatouSow.jpg" alt="Photo de Fatou Sow" height="300" width="300">
+                    <h2>Fatou Sow</h2>
+                    <p>Chercheuse Cybersécurité</p>
+                    <p>Burkina Faso</p>
+                </article>
+
+                <article class="carte-intervenant" data-categorie="ia-tech">
+                    <img src="images/ChidinmaOkafor.jpg" alt="Photo de Chidinma Okafor" height="300" width="300">
+                    <h2>Chidinma Okafor</h2>
+                    <p>Ingénieure en Machine Learning</p>
+                    <p>Nigeria</p>
+                </article>
+
+                <article class="carte-intervenant" data-categorie="business">
+                    <img src="images/YoussefBenali.jpg" alt="Photo de Youssef Benali" height="300" width="300">
+                    <h2>Youssef Benali</h2>
+                    <p>Investisseur, Capital-risque</p>
+                    <p>Maroc</p>
+                </article>
+
+                <article class="carte-intervenant" data-categorie="design">
+                    <img src="images/GraceMwangi.jpg" alt="Photo de Grace Mwangi" height="300" width="300">
+                    <h2>Grace Mwangi</h2>
+                    <p>Product Designer</p>
+                    <p>Togo</p>
+                </article>
+
+                <article class="carte-intervenant" data-categorie="data">
+                    <img src="images/DjerabeFlorentin.jpg" alt="Photo de Djerabé Florentin" height="300" width="300">
+                    <h2>Djerabé Florentin</h2>
+                    <p>Analyste de données</p>
+                    <p>Tchad</p>
+                </article>
+
+                <article class="carte-intervenant" data-categorie="ia-tech">
+                    <img src="images/AdaezeNwosu.jpg" alt="Photo de Adaeze Nwosu" height="300" width="300">
+                    <h2>Adaeze Nwosu</h2>
+                    <p>Chercheuse en IA</p>
+                    <p>Nigeria</p>
+                </article>
+                
+            </div>
+        </section>
+    </main>
+    
+        <!-- le pied de page -->
+    <footer>
+        <div>
+            <div>
+                <h4>Réseaux sociaux</h4>
+                <div>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4>liens utiles</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="programme.html">Programme</a></li>
+                    <li><a href="intervenants.html">Intervenants</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Ressources</h4>
+                <ul>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Contact</h4>
+                <p><i class="bi bi-envelope"></i> AfriConnect@contact.com</p>
+                <p><i class="bi bi-telephone"></i> +221 00 000 00 00</p>
+                <p><i class="bi bi-geo-alt"></i> Dakar, Sénégal</p>
+            </div>
+        </div>
+
+        <p>&copy; <span id="annee"></span> AfriConnect. Tous droits réservés.</p>
+            <!-- masqué par defaut, affiché par js après scroll -->
+        <button id="retour-haut" aria-label="Retour en haut de page" hidden>↑</button>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

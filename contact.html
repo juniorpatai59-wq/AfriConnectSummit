@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - AfriConnect Summit</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <!-- le menu de navigation -->
+    <header>
+        <nav>
+            <div>
+                <strong>AfriConnect</strong>
+                <span>Summit 2026</span>
+            </div>
+
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+
+            <button id="theme-toggle" aria-label="Basculer le mode sombre">Dark Mode</button>
+            <button id="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+        </nav>
+    </header>
+
+    <main>
+            <!-- hero interne + fil d'ariane -->
+        <section>
+            <nav aria-label="Fil d'Ariane">
+                <ol>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li aria-current="page">Contact</li>
+                </ol>
+            </nav>
+
+            <h1>Contactez-nous</h1>
+            <p>Une question sur le sommet, un partenariat, ou envie de nous inscrire ? Remplissez le formulaire ci-dessous. </p>
+        </section>
+
+        <!-- formulaire + infos -->
+        <section>
+            <div class="contact-grid">
+
+                <form action="#" novalidate>
+                    <h2>Formulaire d'inscription</h2>
+
+                    <div class="champ">
+                        <label for="nom">Nom complet</label>
+                        <input type="text" id="nom" name="nom" placeholder="Abdoul Faye Ndiaye" required>
+                        <span class="erreur"></span>
+                    </div>
+
+                    <div class="champ">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="afayendiaye@gmail.com" required>
+                        <span class="erreur"></span>
+                    </div>
+
+                    <div class="champ">
+                        <label for="telephone">Téléphone</label>
+                        <input type="tel" id="telephone" name="telephone" placeholder="+221 00 000 00 00" required>
+                        <span class="erreur"></span>
+                    </div>
+
+                    <div class="champ">
+                        <label for="participation">Type de participation</label>
+                        <select name="participation" id="participation" required>
+                            <option value="">Choisissez une option</option>
+                            <option value="participant">Participant</option>
+                            <option value="intervenant">Intervenant</option>
+                            <option value="sponsor">Sponsor</option>
+                            <option value="investisseur">Investisseur</option>
+                            <option value="presse">Presse</option>
+                        </select>
+                        <span class="erreur"></span>
+                    </div>
+
+                    <div class="champ">
+                        <label for="pays">Pays</label>
+                        <select name="pays" id="pays" required>
+                            <option value="">Choisissez un pays</option>
+                            <option value="senegal">Sénégal</option>
+                            <option value="cote-ivoire">Côte d'Ivoire</option>
+                            <option value="mali">Mali</option>
+                            <option value="benin">Bénin</option>
+                            <option value="burkina-faso">Burkina Faso</option>
+                            <option value="togo">Togo</option>
+                            <option value="guinee">Guinée</option>
+                            <option value="cameroun">Cameroun</option>
+                            <option value="nigeria">Nigeria</option>
+                            <option value="ghana">Ghana</option>
+                            <option value="maroc">Maroc</option>
+                            <option value="tchad">Tchad</option>
+                        </select>
+                        <span class="erreur"></span>
+                    </div>
+
+                    <div class="champ">
+                        <label for="message">Message / Motivation</label>
+                        <textarea name="message" id="message" rows="5" minlength="20" required></textarea>
+                        <span class="erreur"></span>
+                   </div>
+
+                    <button type="submit">Envoyer</button>
+
+                    <p class="succes" hidden>Votre inscription a bien été envoyée !</p>
+                </form>
+
+                <article>
+                    <h2>Informations pratiques</h2>
+                    <p><i class="bi bi-envelope"></i> AfriConnect@contact.com</p>
+                    <p><i class="bi bi-telephone"></i> +221 00 000 00 00</p>
+                    <p><i class="bi bi-geo-alt"></i> Dakar, Sénégal</p>
+
+                    <div>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- les questions qu'on se pose frequement -->
+        <section>
+            <h2>Questions fréquentes</h2>
+
+            <div class="accordeon-item">
+                <input type="checkbox" id="faq1" class="accordeon-toggle">
+                <label for="faq1">Comment m'inscrire au sommet ?</label>
+                <div class="accordeon-contenu">
+                    <p>
+                        Remplissez le formulaire d'inscription disponible sur cette page.
+                        Une fois votre demande envoyée, notre équipe vous contactera par email pour confirmer votre participation.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordeon-item">
+                <input type="checkbox" id="faq2" class="accordeon-toggle">
+                <label for="faq2">Le sommet est-il payant</label>
+                <div class="accordeon-contenu">
+                    <p>
+                        L'accès au sommet est gratuit après inscription. Certaines catégories, comme les intervenants,
+                        les sponsors et les représentant de la presse, sont sélectionnées ou invitées par les organisateurs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordeon-item">
+                <input type="checkbox" id="faq3" class="accordeon-toggle">
+                <label for="faq3">Puis-je devenir sponsor ?</label>
+                <div class="accordeon-contenu">
+                    <p>
+                        Oui. Les entreprises et organisations peuvent devenir partenaires du sommet.
+                        Sélectionnez "Sponsor" dans le formulaire ou contactez directement notre équipe pour recevoir le dossier de partenariat.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordeon-item">
+                <input type="checkbox" id="faq4" class="accordeon-toggle">
+                <label for="faq4">Où se déroule l'événement ?</label>
+                <div class="accordeon-contenu">
+                    <p>
+                        Le sommet se tiendra au Centre International de conférences Abdou Diouf (CICAD), à Dakar, au Sénégal.
+                        Une carte est disponible en bas de cette page pour vous aider à localiser le lieu.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordeon-item">
+                <input type="checkbox" id="faq5" class="accordeon-toggle">
+                <label for="faq5">Comment devenir intervenant ?</label>
+                <div class="accordeon-contenu">
+                    <p>
+                        Nous sélectionnons des intervenants spécialisés dans les domaines de la technologie, de l'entrepreneuriat, de la finance et de l'innovation.
+                        Vous pouvez envoyer votre candidature en choisissant "Intervenant" dans le formulaire et en présentant votre expérience.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- la carte -->
+        <section>
+            <h2>Nous trouver</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.5020373939474!2d-17.19801512584763!3d14.740722473632616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec19fa934f485d9%3A0x1f5da325bb819eea!2sCentre%20International%20de%20Conf%C3%A9rence%20Abdou%20Diouf!5e0!3m2!1sfr!2ssn!4v1783464114976!5m2!1sfr!2ssn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Localisation d'AfriConnect Summit à Dakar"></iframe>
+        </section>
+
+    </main>
+
+    <!-- le pied de page -->
+    <footer>
+        <div>
+            <div>
+                <h4>Réseaux sociaux</h4>
+                <div>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4>liens utiles</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="programme.html">Programme</a></li>
+                    <li><a href="intervenants.html">Intervenants</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Ressources</h4>
+                <ul>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Contact</h4>
+                <p><i class="bi bi-envelope"></i>AfriConnect@contact.com</p>
+                <p><i class="bi bi-telephone"></i> +221 00 000 00 00</p>
+                <p><i class="bi bi-geo-alt"></i> Dakar, Sénégal</p>
+            </div>
+        </div>
+
+        <p>&copy; <span id="annee"></span> AfriConnect. Tous droits réservés.</p>
+            <!-- masqué par defaut, affiché par js après scroll -->
+        <button id="retour-haut" aria-label="Retour en haut de page" hidden>↑</button>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

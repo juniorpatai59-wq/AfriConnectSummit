@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programme - AfriConnect Summit</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <!-- le menu de navigation -->
+    <header>
+        <nav>
+            <div>
+                <strong>AfriConnect</strong>
+                <span>Summit 2026</span>
+            </div>
+
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html" aria-current="page">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <button id="theme-toggle" aria-label="Basculer le mode sombre">Dark Mode</button>
+            <button id="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+        </nav>
+    </header>
+    
+        <!-- le main -->
+    <main>
+        <!-- hero interne avec fil d'ariane -->
+        <section>
+            <nav aria-label="Fil d'Ariane">
+                <ol>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li aria-current="page">Programme</li>
+                </ol>
+            </nav>
+            <h1>Programme du Sommet</h1>
+            <p>3 jours de conférences, ateliers et sessions de Networking pour connecter les talents, les idées et les capitaux qui transforment l'Afrique.</p>
+        </section>
+
+        <section>
+            <!-- onglet 3 jours, fait un tri après le clic pour choisir le jour correspondant -->
+            <div class="onglets" role="tablist" aria-label="Jours du sommet">
+                <button class="onglet-btn actif" data-jour="jour1" role="tab" aria-selected="true" aria-controls="jour1">Jour 1</button>
+                <button class="onglet-btn" data-jour="jour2" role="tab" aria-selected="false" aria-controls="jour2">Jour 2</button>
+                <button class="onglet-btn" data-jour="jour3" role="tab" aria-selected="false" aria-controls="jour3">Jour 3</button> 
+            </div>
+
+                <!-- panneau du jour 1 visible par defaut -->
+            <div class="jour-panel" id="jour1" role="tabpanel">
+                <h2>Jour 1 - <span>Lundi 5 octobre 2026</span></h2>
+                <table>
+                    <caption class="sr-only">Planning détaillé du Jour 1</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Heure</th>
+                            <th scope="col">Session</th>
+                            <th scope="col">Intervenant</th>
+                            <th scope="col">Salle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>08h30 - 09h00</td>
+                            <td>Accueil & Enregistrement</td>
+                            <td>-</td>
+                            <td>Hall principal</td>
+                        </tr>
+                        <tr>
+                            <td>09h00 - 09h45</td>
+                            <td>Cérémonie d'ouverture</td>
+                            <td>Aminata Diallo</td>
+                            <td>Salle A</td>
+                        </tr>
+                        <tr>
+                            <td>10h00 - 11h00</td>
+                            <td>L'IA au service de l'Afrique</td>
+                            <td>Chidinma Okafor</td>
+                            <td>Salle B</td>
+                        </tr>
+                        <tr>
+                            <td>11h45 - 12h15</td>
+                            <td>Financer sa startup en Afrique</td>
+                            <td>Youssef Benali</td>
+                            <td>Salle A</td>
+                        </tr>
+                        <tr>
+                            <td>14h00 - 15h00</td>
+                            <td>Atelier Design UX pour le mobile</td>
+                            <td>Grace Mwangi</td>
+                            <td>Salle C</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+                <!-- panneau du jour 2 masqué par defaut -->
+            <div class="jour-panel" id="jour2" role="tabpanel" hidden>
+                <h2>Jour 2 - <span>Mardi 6 octobre 2026</span></h2>
+                <table>
+                    <caption class="sr-only">Planning détaillé du Jour 2</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Heure</th>
+                            <th scope="col">Session</th>
+                            <th scope="col">Intervenant</th>
+                            <th scope="col">Salle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09h00 - 10h00</td>
+                            <td>Data science : opportunités africaines</td>
+                            <td>Moussa Traoré</td>
+                            <td>Salle A</td>
+                        </tr>
+                        <tr>
+                            <td>10h15 - 11h15</td>
+                            <td>Table ronde : Entreprendre en Afrique</td>
+                            <td>Kwamé Mensah</td>
+                            <td>Salle B</td>
+                        </tr>
+                        <tr>
+                            <td>11h30 - 12h30</td>
+                            <td>Session de pitch startups</td>
+                            <td>Plusieurs intervenants</td>
+                            <td>Salle A</td>
+                        </tr>
+                        <tr>
+                            <td>14h00 - 15h00</td>
+                            <td>Hackathon : lancement</td>
+                            <td>Grace Mwangi</td>
+                            <td>Salle C</td>
+                        </tr>
+                        <tr>
+                            <td>15h15 - 16h15</td>
+                            <td>Networking B2B</td>
+                            <td>-</td>
+                            <td>Espace lounge</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+                <!-- panneau du jour 3 masqué par defaut -->
+            <div class="jour-panel" id="jour3" role="tabpanel" hidden>
+                <h2>Jour 3 - <span>Mercredi 7 octobre 2026</span></h2>
+                <table>
+                    <caption class="sr-only">Planning détaillé du Jour 3</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Heure</th>
+                            <th scope="col">Session</th>
+                            <th scope="col">Intervenant</th>
+                            <th scope="col">Salle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09h00 - 10h00</td>
+                            <td>Résultats du hackathon</td>
+                            <td>Grace Mwangi</td>
+                            <td>Salle C</td>
+                        </tr>
+                        <tr>
+                            <td>10h15 - 11h15</td>
+                            <td>Investir dans la tech africaine</td>
+                            <td>Youssef Benali</td>
+                            <td>Salle A</td>
+                        </tr>
+                        <tr>
+                            <td>11h30 - 12h30</td>
+                            <td>Panel : Femme dans la tech</td>
+                            <td>Adaeze Nwosu</td>
+                            <td>Salle B</td>
+                        </tr>
+                        <tr>
+                            <td>14h00 - 15h00</td>
+                            <td>Remise des prix</td>
+                            <td>-</td>
+                            <td>Salle A</td>
+                        </tr>
+                        <tr>
+                            <td>15h15 - 16h00</td>
+                            <td>Cérémonie de clôture</td>
+                            <td>Aminata Diallo</td>
+                            <td>Salle A</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </section>
+
+            <!-- les thematiques -->
+        <section>
+            <h2>Nos thématiques</h2>
+
+            <div class="thematiques-grid">
+                <article>
+                    <i class="bi bi-cpu"></i>
+                    <h3>IA & Tech</h3>
+                    <p>Les dernières avancées en intelligence artificielle et technologies émergentes.</p>
+                </article>
+
+                <article>
+                    <i class="bi bi-graph-up-arrow"></i>
+                    <h3>Business</h3>
+                    <p>Stratégies de croissance, financement et entrepreneuriat en Afrique.</p>
+                </article>
+
+                <article>
+                    <i class="bi bi-palette"></i>
+                    <h3>Design</h3>
+                    <p>Expérience utilisateur et design produit pensés pour le marché africain.</p>
+                </article>
+
+                <article>
+                    <i class="bi bi-bar-chart-line"></i>
+                    <h3>Data</h3>
+                    <p>Exploitation des données pour la prise de décision et l'innovation.</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Télécharger le programme complet</h2>
+            <a href="#">Télécharger en PDF</a>
+        </section>
+
+    </main>
+
+        <!-- le pied de page -->
+    <footer>
+        <div>
+            <div>
+                <h4>Réseaux sociaux</h4>
+                <div>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4>liens utiles</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="programme.html">Programme</a></li>
+                    <li><a href="intervenants.html">Intervenants</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Ressources</h4>
+                <ul>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Contact</h4>
+                <p><i class="bi bi-envelope"></i>AfriConnect@contact.com</p>
+                <p><i class="bi bi-telephone"></i> +221 00 000 00 00</p>
+                <p><i class="bi bi-geo-alt"></i> Dakar, Sénégal</p>
+            </div>
+        </div>
+
+        <p>&copy; <span id="annee"></span> AfriConnect. Tous droits réservés.</p>
+            <!-- masqué par defaut, affiché par js après scroll -->
+        <button id="retour-haut" aria-label="Retour en haut de page" hidden>↑</button>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
