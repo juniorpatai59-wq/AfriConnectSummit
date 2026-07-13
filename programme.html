@@ -5,25 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programme - AfriConnect Summit</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
         <!-- le menu de navigation -->
     <header>
         <nav>
-            <div>
+            <div class="logo">
                 <strong>AfriConnect</strong>
                 <span>Summit 2026</span>
             </div>
 
-            <ul>
+            <ul class="nav-links">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="programme.html" aria-current="page">Programme</a></li>
                 <li><a href="intervenants.html">Intervenants</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-
-            <button id="theme-toggle" aria-label="Basculer le mode sombre">Dark Mode</button>
-            <button id="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+            <!-- bouton pour le menu mobile et l'activation ou désactivation du mode sombre  -->
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Basculer le mode sombre">Dark Mode</button>
+                <button id="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+            </div>
         </nav>
     </header>
     
@@ -235,10 +242,10 @@
 
         <!-- le pied de page -->
     <footer>
-        <div>
-            <div>
+        <div class="footer-top">
+            <div class="footer-social">
                 <h4>Réseaux sociaux</h4>
-                <div>
+                <div class="social-icons">
                     <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
                     <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                     <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
@@ -247,7 +254,7 @@
                 </div>
             </div>
 
-            <div>
+            <div class="footer-links">
                 <h4>liens utiles</h4>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
@@ -257,7 +264,7 @@
                 </ul>
             </div>
 
-            <div>
+            <div class="footer-ressources">
                 <h4>Ressources</h4>
                 <ul>
                     <li><a href="#">Mentions légales</a></li>
@@ -266,7 +273,7 @@
                 </ul>
             </div>
 
-            <div>
+            <div class="footer-contact">
                 <h4>Contact</h4>
                 <p><i class="bi bi-envelope"></i>AfriConnect@contact.com</p>
                 <p><i class="bi bi-telephone"></i> +221 00 000 00 00</p>
@@ -274,7 +281,7 @@
             </div>
         </div>
 
-        <p>&copy; <span id="annee"></span> AfriConnect. Tous droits réservés.</p>
+        <p class="footer-bas">&copy; <span id="annee"></span> AfriConnect. Tous droits réservés.</p>
             <!-- masqué par defaut, affiché par js après scroll -->
         <button id="retour-haut" aria-label="Retour en haut de page" hidden>↑</button>
     </footer>
