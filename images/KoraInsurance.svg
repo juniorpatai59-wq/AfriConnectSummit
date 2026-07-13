@@ -1,0 +1,8 @@
+<svg viewBox="0 0 220 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M40 20 L60 28 V50 C60 65 52 74 40 80 C28 74 20 65 20 50 V28 Z"
+        fill="none" stroke="#FF6B35" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M32 50 L38 57 L50 42" fill="none" stroke="#FF6B35" stroke-width="4"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="80" y="52" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#EDEFF3">Kora</text>
+  <text x="80" y="74" font-family="Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="2" fill="#FF6B35">INSURANCE</text>
+</svg>

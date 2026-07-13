@@ -1,0 +1,10 @@
+<svg viewBox="0 0 220 100" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#FF6B35">
+    <rect x="22" y="58" width="8" height="16" rx="2"/>
+    <rect x="34" y="48" width="8" height="26" rx="2"/>
+    <rect x="46" y="36" width="8" height="38" rx="2"/>
+    <rect x="58" y="24" width="8" height="50" rx="2"/>
+  </g>
+  <text x="80" y="52" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#EDEFF3">Sahel</text>
+  <text x="80" y="74" font-family="Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3" fill="#FF6B35">TELECOM</text>
+</svg>

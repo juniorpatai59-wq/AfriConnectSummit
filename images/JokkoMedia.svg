@@ -1,0 +1,7 @@
+<svg viewBox="0 0 220 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M18 26 H58 C62 26 64 28 64 32 V50 C64 54 62 56 58 56 H36 L24 68 V56 H18
+           C14 56 12 54 12 50 V32 C12 28 14 26 18 26 Z"
+        fill="#FF6B35"/>
+  <text x="80" y="52" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#EDEFF3">Jokko</text>
+  <text x="80" y="74" font-family="Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="2" fill="#FF6B35">MEDIA</text>
+</svg>
