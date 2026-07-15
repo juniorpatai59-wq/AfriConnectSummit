@@ -62,7 +62,7 @@ SobkikaPatai-Junior-AfriConnectSummit/
 
 ## Lien GitHub Pages
 
-
+https://github.com/juniorpatai59-wq/AfriConnectSummit
 
 ## Ressources consultées
 
