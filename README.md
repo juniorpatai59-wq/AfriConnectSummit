@@ -20,6 +20,7 @@ L'objectif est de proposer une interface moderne, responsive et interactive grâ
 
 ## Structure du projet
 
+```text
 SobkikaPatai-Junior-AfriConnectSummit/
 │
 ├── css/
@@ -37,6 +38,7 @@ SobkikaPatai-Junior-AfriConnectSummit/
 ├── intervenants.html
 ├── contact.html
 └── README.md
+```
 
 ## Technologies utilisées
 
